@@ -1,0 +1,42 @@
+h2 {
+    text-align: center;
+    margin-top: 5vw;
+    color: green;
+}
+
+.list{
+    font:  small-caps bold 12px/30px Georgia, serif;
+}
+
+.ulist-font {
+    font: italic small-caps  12px/30px Georgia, serif;
+    color: rgb(74, 211, 20);
+}
+.ulist-font li:nth-child(1)  {
+    color: #2b5fd6;
+  }
+  
+  .ulist-font li:nth-child(2)  {
+    color: red;
+  }
+  
+  .ulist-font li:nth-child(3)  {
+    color: green;
+  }
+  .ulist-font li:nth-child(1)  {
+    color: #311361;
+  }
+  
+  .ulist-font li:nth-child(2)  {
+    color: rgb(175, 116, 28);
+  }
+  
+  .ulist-font li:nth-child(3)  {
+    color: rgba(224, 18, 180, 0.993);
+  }
+
+/* on hover color change */
+
+  .ulist-font li:hover   {
+    color: #d60101fd;
+  }

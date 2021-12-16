@@ -3,49 +3,56 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>adding product values using form </title>
-   
-</head>
-<header>Product information</header>
+    <link rel="stylesheet" href="../css/form.css">
 
-<body >
-    <div class="container">
-        <form id="form" class="form" autocomplete="off">
-            <h1>add product details and submit</h1>
-            <div class="form-control">
+    <title>adding product values using form </title>
+
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Add product details and submit
+          </div>
+        <form id="form" name="myform" class="form" action="#" method="dialog" onsubmit=" return validateform();">
+            
+            <div class="inputfield">
                 <label for="name">Product name:</label>
-                <input type="text" name="name" placeholder="enter a product name" id="name">
+                <input  class="input" type="text" name="name" placeholder="enter a product name" id="name">
             </div>
-                
-            <div class="form-control">
+
+            <div class="inputfield">
                 <label for="prize">Product prize:</label>
-                <input type="text" name="prize" placeholder="enter a product prize" id="prize">
-                
-                
+                <input class="input" type="number" name="prize" placeholder="enter a product prize" id="prize">
+
+
             </div>
-            <div class="form-control">
+            <div class="inputfield">
                 <label for="description">description:</label>
-                <input type="text" name="description" placeholder="enter a product description" id="description">
-                
-                
+                <textarea class="textarea" rows="3" cols="15" type="text" name="description" placeholder="enter a product description" id="description"></textarea>
+
+
             </div>
-            <div class="form-control">
+            <div class="inputfield">
                 <label for="image">Product image:</label>
-                <input  type="file"  name="image" placeholder="add image" id="image">
-                
-                
+                <input class="input" type="file" name="image" placeholder="add image" id="image">
+
+
             </div>
-            <div class="form-control">
+            <div class="inputfield">
                 <label for="name">manufacture date:</label>
-                <input type="date" name="date" placeholder="enter a product name" id="date">
-                
-                
+                <input class="input" type="date" name="date" placeholder="enter a product name" id="date">
+
+
             </div>
-            <button type="submit" onclick="validate();">submit</button>
+            <div class="inputfield">
+           <input type="submit" value="add" class="btn">
+        </div>
         </form>
     </div>
-    
+
 </body>
+<script src="../javascript/form.js"></script>
 
 </html
